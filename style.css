@@ -1,0 +1,532 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family:'Poppins', sans-serif;
+}
+html{
+  scroll-behavior: smooth;
+}
+body 
+{
+  margin: auto;
+  max-width: 70%;
+	display:flex;
+  background: linear-gradient(to top ,rgb(255, 255, 255),rgb(254, 251, 251),rgb(255, 255, 255));
+	justify-content: center;
+	min-height:100vh;
+  background-attachment:fixed;
+}
+
+header 
+{
+ position: absolute;
+ top: 0%;
+ left: 0%;
+ width: 100%;
+ padding: 30px 100px;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ z-index: 2;
+}
+
+header .logo 
+{
+  color: rgb(0, 0, 0);
+  font-weight: 700px;
+  text-decoration: none;
+  font-size: 2em;
+  letter-spacing: 2px;
+  font-family: monospace;
+  
+}
+
+header ul
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header ul li 
+{
+  list-style: none;
+  margin-left: 20px;
+}
+header ul li a
+{
+  text-decoration: none;
+  padding: 6px 15px;
+  color: rgb(0, 0, 0);
+  border-radius: 20px;
+}
+header ul li a:hover {
+  background-color: white;
+  color: black;
+}
+
+.mypic{
+  display: block;
+  position: absolute;
+  top: 20%;
+}
+.abttitle{
+  position:absolute;
+  display: flex;
+}
+/*about symbols*/
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+.about
+{
+  display: flex;
+  position: relative;
+  top: 45em;
+  z-index: 1; 
+}
+
+.about h2{
+  position: absolute;
+  transform: translate(10px,1em);
+  display: flex;
+  left: 20em;
+  
+}
+
+.about .container
+{
+  transform: translate(10px,5em);
+  position: relative;
+  top:5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1400px;
+  flex-wrap: wrap;
+  
+}
+.about .container .card
+{
+  bottom: 50px;
+  position: relative;
+  width: 280px;
+  height: 400px;
+  margin: 30px;
+  box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+  border-radius: 15px;
+  background: rgba(255,255,255,0.1);
+  overflow: hidden;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid  rgba(255,255,255,0.5);
+  border-left: 1px solid  rgba(255,255,255,0.5);
+  backdrop-filter: blur(5px);
+
+}
+.about .container .card .content
+{
+  padding: 50px;
+  text-align: center;
+  transform: translateY(0px);
+  opacity: 1;
+  
+}
+
+
+.about .container .card .content h1
+{
+  position: relative;
+  transform: translate(0px,150px);
+  left: 3px;
+  top: -150px;
+  font-size: 1em;
+  color:rgb(0, 0, 0);
+  z-index: 1;
+  pointer-events: none;
+
+}
+.about .container .card .content i
+{
+  position: absolute; 
+  left: -25px; 
+  top:1px;
+}
+
+.about .container .card .content h3
+{
+  transform: translate(0px,150px);
+  position: absolute;
+  left: 1px;
+  top: -50px;
+  text-align: center;
+  font-size: 0.8em;
+  color:rgb(0, 0, 0);
+  z-index: 1;
+  pointer-events: none;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+.about .container .card .content h4
+{
+  transform: translate(0px,150px);
+  position: absolute;
+  left: 3em;
+  top: -50px;
+  text-align: left;
+  font-size: 0.8em;
+  color:rgb(0, 0, 0);
+  z-index: 1;
+  pointer-events: none;
+}
+.about .container .card .picture img{
+  
+  position:absolute;;
+  transform: translate(3.4em,16.5em);
+  width: 10em;
+  z-index: 1;
+  top: -50px;
+  border-radius: 1em;
+  
+}
+
+
+@media(max-width: 500px){
+  .about{
+    display: block;
+  }
+  .card{
+    transform: scale(.7);
+} 
+ 
+}
+
+
+
+/* --------------------------------------------- */
+#myprojects{
+  
+  transform: translate(-70em,-10em);
+
+}
+.project{
+  display: flex;
+  position: absolute;
+  top: 99em;
+  z-index: 1; 
+  padding: 5em;
+  
+}
+.project h2{
+  
+  position: absolute;
+  display: flex;
+  bottom: 18em;
+  left: 20em;
+  transform: translate(4em,-10em);
+  
+  
+}
+
+.projects
+{
+  display: flex;
+  position: relative;
+  
+}
+
+.projects
+{
+  
+  position: relative;
+  width: 1000px;
+  height: 500px;
+  margin: 30px;
+  box-shadow: 20px 20px 30px rgba(0,0,0,0.3);
+  border-radius: 15px;
+  background: rgba(255,255,255,0.1);
+  overflow: hidden;
+  align-items: center;
+  border-top: 1px solid  rgba(255,255,255,0.5);
+  border-left: 1px solid  rgba(255,255,255,0.5);
+  backdrop-filter: blur(5px);
+}
+.projects .projcon
+{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1400px;
+  flex-wrap: wrap;
+}
+
+ .projects .projbox{
+  position: absolute;
+ }
+
+.projbtn{
+  
+  position: relative;
+  font-family: 'Courier New', Courier, monospace;
+  left: 60em;
+  top: -0.4em;
+  background-image: linear-gradient(rgb(0, 0, 0),rgb(71, 51, 51));
+  color: rgb(255, 255, 255);
+  
+}
+.projbtn:hover{
+  transform:translateY(-4px);
+}
+#projimg{
+  
+  height: 25em;
+  width: 45em;
+  margin-right: auto;
+  margin-left: 50em;
+  transition: ease-in-out 1s;
+}
+.projdesc{
+  
+  position: absolute;
+  height: 25em;
+  width: 12em;
+  background-image: linear-gradient(#190b0b,#4b4b4b);
+  left:10em;
+  margin-top: 1.5em;
+  margin-left: 38em;
+}
+.projdesc .projdescontent{
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  height: 23em;
+  width: 10em;
+  top: 1em;
+  left: 1em; 
+}
+
+
+.projdesc:hover{
+  transform: translateY(5px);
+}
+
+.projdesc .projdescontent p{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: small;
+  font-weight: bolder;
+  text-align: center;
+}
+
+/*----------------------------------------------*/
+
+.education{
+ 
+  display: flex;
+  position: absolute;
+  transform: translate(-73em,138em);
+}
+.education h2{
+  transform: translate(25em,-3em);
+}
+
+.univcard{
+  position: relative;
+  width: 280px;
+  height: 300px;
+  margin: 30px;
+  box-shadow: 20px 20px 50px rgba(0,0,0,0.2);
+  
+  background: rgba(255,255,255,0.1);
+  overflow: hidden;
+  display: block;
+  justify-content: center;
+  align-items: center;
+
+  transition: ease-in-out .2s;
+}
+
+
+.univcard .year{
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ font-style: italic;
+ color: white;
+ position: relative;
+ transform: translate(0px,14em);
+}
+.univcard .year h4{
+  transform: translate(30px);
+}
+.univcard .logo{
+  margin-left: 26px;
+  transform: translate(0px,50px);
+
+}
+
+.univcard:hover{
+  transform: scale(1.1);
+}
+
+
+.univcard .logo img{
+  width: 135px;
+  position: absolute;
+}
+
+.contact1{
+  display: flex;
+  position: absolute;
+  transform: translate(-72em,180em);
+}
+
+.contact1 h2{
+  transform: translate(25em,-3em);
+}
+
+.contactdiv
+{
+  
+  justify-content: center;
+  display: flex;
+  position: relative;
+  width: 1000px;
+  height: 550px;
+  margin: 30px;
+  box-shadow: 20px 20px 50px rgba(0,0,0,0);
+  border-radius: 15px;
+  background: rgba(255,255,255,0.1);
+  overflow: hidden;
+  align-items: center;
+  border-top: 1px solid  rgba(255,255,255,0.5);
+  border-left: 1px solid  rgba(255,255,255,0.5);
+  backdrop-filter: blur(5px);
+}
+.contactcard{
+  transform: translate(0em,-10em);
+  position: relative;
+  width: 280px;
+  height: 150px;
+  margin: 30px;
+  box-shadow: 20px 20px 50px rgba(0,0,0,0.2);
+  border: #190b0b;
+ 
+  background: rgba(255,255,255,0.1);
+  overflow: hidden;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid  rgba(255,255,255,0.5);
+  border-left: 1px solid  rgba(255,255,255,0.5);
+  transition: ease-in-out .2s;
+}
+.contactcard h1{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 20;
+  color: white;
+  text-align: center;
+  background-color: rgb(46, 17, 17);
+}
+.contactcard a{
+  margin-top: 3em;
+  margin-left: 2em;
+  margin-right: 1em;
+  display: inline-flex;
+  position: relative;
+  text-decoration: none;
+  width: 2em;
+  height: 2em;
+  background-color: burlywood;
+  color: rgb(65, 43, 2);
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
+}
+
+.animation-area {
+	width: 100%;
+	height: 100%;
+  position: absolute;
+  background-attachment: fixed;
+}
+.box-area {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.box-area li {
+	position: absolute;
+	display: block;
+	list-style: none;
+	width: 0;
+	height: 0;
+	border-bottom: 160px solid rgba(0, 0, 0, 0.2);
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	animation: animate 20s linear infinite;
+	bottom: -150px;
+}
+.box-area li:nth-child(1) {
+	left: 86%;
+	animation-delay: 0s;
+}
+.box-area li:nth-child(2) {
+	left: 12%;
+	animation-delay: 1.5s;
+	animation-duration: 10s;
+}
+.box-area li:nth-child(3) {
+	left: 70%;
+	animation-delay: 5.5s;
+}
+.box-area li:nth-child(4) {
+	left: 42%;
+	animation-delay: 0s;
+	animation-duration: 15s;
+}
+.box-area li:nth-child(5) {
+	left: 65%;
+	animation-delay: 0s;
+}
+.box-area li:nth-child(6) {
+	left: 23%;
+	animation-delay: 3.5s;
+}
+@keyframes animate {
+	0% {
+		transform: translateY(0) scale(0);
+	}
+	100% {
+		transform: translateY(-800px) scale(2);
+		opacity: 0;
+	}
+}
+@media screen and (max-width: 500px) {
+  header ul{
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  #myprojects{
+    display: none;
+  }
+  .univcard{
+    display: block;
+  }
+  .projects{
+    transform: scale(1);
+    display: flex;
+  }
+ 
+}
